@@ -1,0 +1,14 @@
+machine:
+  xcode:
+    version: 9.0.1
+dependencies:
+  pre:
+    - ./scripts/prepare.sh
+  cache_directories:
+    - "/usr/local/Cellar"
+compile:
+  override:
+    - ./scripts/deploy.sh
+test:
+  override:
+    - node -v

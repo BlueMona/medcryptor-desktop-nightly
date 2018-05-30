@@ -1,0 +1,40 @@
+{
+    "package.json": {
+        "name": "medcryptor-nightly",
+        "description": "MedCryptor Nightly",
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/PeerioTechnologies/medcryptor-desktop-nightly.git"
+        },
+        "build": {
+            "appId": "com.medcryptor.nightly",
+            "productName": "MedCryptor Nightly",
+            "win": {
+                "publisherName": "Peerio Technologies Inc."
+            }
+        }
+    },
+    "app/package.json": {
+        "name": "medcryptor-nightly",
+        "productName": "MedCryptor Nightly",
+        "description": "MedCryptor Nightly",
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/PeerioTechnologies/medcryptor-desktop-nightly.git"
+        },
+        "updater": {
+            "nightly": true,
+            "publicKeys": [
+                "RWSphsMQjlB23ku5WUu9gvRmFPg6uQGQprtCRBzhROs+xKJQHdIuH4m5"
+            ],
+            "manifests": [
+                "github:PeerioTechnologies/medcryptor-desktop-nightly"
+            ]
+        },
+        "peerio": {
+            "appId": "com.medcryptor.nightly",
+            "keychainService": "MedCryptorNightly",
+            "socketServerUrl": "wss://treetrunks.peerio.com"
+        }
+    }
+}
