@@ -12,7 +12,7 @@ echo "Building and publishing Medcryptor Nightly"
 ./node_modules/.bin/peerio-desktop-release --repository PeerioTechnologies/peerio-desktop \
                        --overrides PeerioTechnologies/medcryptor-desktop,PeerioTechnologies/medcryptor-desktop-nightly \
                        --publish \
-                       --tag dev \
+                       --tag dchest/ch9249/mc-desktop-upgrade-dialog-says-peerio \
                        --versioning medcryptornightly \
                        --nosign \
                        --key ../medcryptor-desktop-nightly/signing.key
