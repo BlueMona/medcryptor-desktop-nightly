@@ -13,15 +13,6 @@
             "win": {
                 "publisherName": "Peerio Technologies Inc."
             }
-        }
-    },
-    "app/package.json": {
-        "name": "medcryptor-nightly",
-        "productName": "MedCryptor Nightly",
-        "description": "MedCryptor Nightly",
-        "repository": {
-            "type": "git",
-            "url": "git+https://github.com/PeerioTechnologies/medcryptor-desktop-nightly.git"
         },
         "updater": {
             "nightly": true,
